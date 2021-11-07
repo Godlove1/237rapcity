@@ -1,0 +1,408 @@
+/* resetting to normal */
+:root{
+	--linebg:  linear-gradient(-320deg,rgb(223, 220, 220),rgb(3, 3, 3));
+	--bg:rgba(192, 192,192,0.3);
+	--tagbg:orange;
+	--bigfont: 2em;
+	--normfont: 1.2em;
+	--color: white;
+}
+  				 *{ 
+		     margin:0 ; 
+              padding:0;
+ 			 box-sizing:border-box;
+				 }
+				body {
+width: 100%;
+ height: 100vh;
+ background: var(--linebg);
+ background-repeat: no-repeat;
+         background-position: fixed;
+         background-attachment: center;
+         background-size: 100%;
+		height:auto;
+		padding: 0 2px;
+}
+/*HEADER STYLING FOR ALL PAGES*/
+/* header and navbar styling starts here */
+		.header{
+			width:100%;
+			height:120px;
+	background:var(--bg);
+			}
+		.tagline{
+				padding-top: 10px;
+				text-align:center;
+				letter-spacing:8px;
+				font-size: 1.3em;
+			background-image: linear-gradient(320deg,orange,yellow);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+				}
+		
+		/*header h2 237rapcity*/
+			.header h2{
+text-align: center;
+		text-transform:uppercase;
+		font-size:1.5em;
+    padding-top: 30px;
+color: bisque;
+		}
+		
+		.header h2:hover{
+			font-weight:100;
+			color: rgba(43, 33, 33, 0.719);
+			text-transform: capitalize;
+font-size: var(--bigfont);
+			}
+			
+			
+			 .navbar{
+ border:1px solid silver;
+width: 100%;
+ height:auto;
+ border-radius:5px;
+ }
+      
+				/* making fit screen to end*/
+				.navbar ul{
+					list-style-type: none;/*remove bullets*/
+					  display:flex;
+					align-items:center;
+					justify-content: space-around; 
+					width:100%;
+padding: 10px;
+					}
+					/* removing underlined*/
+					.navbar a{
+						text-decoration:none;
+						color:white;
+             padding: 5px;
+						 }
+				.navbar ul li{
+					border-radius:5px;
+		background:rgba(192, 192,192,0.3) ;
+					padding:5px;
+				}
+/* NAVBAR STYLING END HERE*/
+/*STYLING FOR OTHER PARTS DOWN HERE*/
+
+ .introhof{
+ margin:5px;
+ border-radius:10px;
+ background:rgba(192, 192,192,0.4) ;
+ }
+ .introhof p{
+ 	font-size: var(--normfont);
+ color: var(--color);
+ font-weight:150;
+ line-height:1.2;
+padding: 10px;
+ }
+ 
+ /* STYLING FOR KHOF SUBNAVBAR*/
+ .subbar{
+ border:1px solid silver;
+ margin:8px;
+ border-radius:15px;
+ background:black;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ }
+				/* making fit screen to end*/
+				.subbar ul{
+					list-style-type: none;/*remove bullets*/
+					  display:flex;
+					align-items:center;
+					justify-content: space-around; 
+					width:100%;
+					padding: 10px;
+					}
+					/* removing underlined*/
+					.subbar li a{
+						text-decoration:none;
+						color:white;
+						text-transform:capitalize;
+						font-size: var(--normfont);
+						 }
+		
+		/*HOVER EFFECT*/
+						.subbar ul li:hover{
+		box-shadow: 0 0 6px  white;
+		border-radius: 20px;
+							}
+						
+.pagename{
+ display:flex;
+ justify-content:center;
+ align-items: center;
+ border: 1px solid silver;
+ border-radius: 20px;
+ }
+ .pagename p{
+ 	text-align:center;
+ font-size: var(--normfont);
+ font-weight:150;
+ padding:10px;
+ color:var(--color);
+ }
+
+/*END OF STYLING FOR KHOF SUBNAVBAR*/
+    h4{
+							text-align:center;
+							font-size: 1.5em;
+							font-weight:100;
+							padding:10px;
+							margin: 40px auto;
+							color:white;
+							background:grey;
+						}
+				
+
+
+
+
+
+/* start of rap artist page stylix */
+     .rapart{
+	width: 100%;
+	height:auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+     }
+     		.artcard { 
+				 width:240px;
+				 margin:30px  0 ; 
+				 border-radius:30px;
+				 } 
+								.artname{
+									color:white;
+					padding: 5px; 
+					font-size: 1.5em;
+					 text-align: center;
+					letter-spacing:1px;
+					font-weight:500;
+background:rgba(192, 192,192,0.5) ;
+					 border-radius:0 0 30px 30px;
+									width: 100%;
+									} 
+						.artcard > img { 
+							width: 100%; 
+							object-fit: contain;
+							border-radius:20px 20px 0 0; 
+								}
+/*featured video card img as link styling*/
+.fcard a img{
+	width:100%;
+	height:auto;
+	}
+/*featured div*/
+.fpart{
+width: 100%;
+height: auto;
+	display:flex;
+ justify-content: space-around;
+align-content: center;
+flex-wrap: wrap;
+     }
+     .fpart > .fcard { 
+width: 200px;
+margin: 15px auto;
+border-radius:10px;
+				 } 
+
+								.fname{
+						color:var(--color); 
+					font-size:var(--normfont);
+					 text-align: center;
+background:var(--bg);
+				border-radius:0 0 10px 10px;
+									} 
+						.fcard img { 
+						width: 100%; 
+					height: 100%; 
+border-radius: 10px 10px 0 0;
+							}
+
+/*featured videos video styling*/ 
+video{
+width: 100%;
+height: 100%;
+border-radius: 30px 30px  0  0;
+}
+			  .vidpart{
+    display:flex;
+    justify-content:space-around;
+		align-items: center;
+flex-wrap: wrap;
+	width: 100%;
+     }
+     		.vidcard { 
+box-shadow: 0 0 50px ; 
+width: 250px;
+height: 250px;
+border-radius:30px;
+margin: 40px auto;
+				 } 
+								.vidname{
+						color:var(--color);
+					padding: 5px; 
+					font-size: var(--normfont);
+					 text-align: center;
+					letter-spacing:2px;
+					font-weight:400;
+           background:var(--bg) ;
+					 border-radius: 0 18px 18px;
+           cursor: pointer;
+									} 
+						.vidcard  iframe{ 
+							width: 100%; 
+							height: 100%; 
+							border-radius:20px 30px 0 ; 
+								} 
+								
+ .relpost,#NASOCIAL{
+ border:2px solid silver;
+ margin:15px  25px;
+ height:auto;
+ border-radius:15px;
+ }
+ .relpost h3, #NASOCIAL h3{
+ 	padding:8px;
+    font-size: 1.2em;
+    font-weight:100;
+    color:white;
+ }
+ #NASOCIAL{
+ border:1px solid rgb(213, 223, 223);
+ margin:35px 25px;
+box-shadow: 2px  5px 1px rgb(61, 61, 61);
+ }
+ 
+ .NA{
+ 	border:2px solid rgb(199, 132, 8);
+ margin:15px;
+ text-align: center;
+ background:var(--bg);
+ height:90px;
+ }
+				.fa{
+			padding:10px;
+			margin:5px;
+			font-size: 2em;
+			}
+		.NASOCIAL a{
+			text-decoration:none;
+			}
+			.fa:hover{
+			transform: translateY(-4px);
+				color:silver;
+				}
+				/* END OF RAP KNOW PAGE STYLING*/
+ 				
+     					/* footer styling start*/
+					 footer{
+									background:rgba(0,0,0,0.4) ;
+									}
+						footer h5{
+							text-align:center;
+							font-size: var(--bigfont);
+							font-weight:100;
+							padding:8px;
+							color:white;
+background: rgba(0, 0, 0, 0.712);
+letter-spacing: 5px;
+						}
+						
+						footer h5 .red{
+							color: orange;
+font-weight: 100;
+							}
+							footer .tag{
+							text-align:center;
+							font-size: 1.2em;
+							font-weight:100;
+							color:var(--color);
+							letter-spacing:8px;
+						}
+		h6 {
+				font-size:1em;
+				font-weight:100;
+				text-align:left;
+				color:var(--color);
+       padding: 8px;
+				}
+				
+					.otherinfo, p{
+						padding: 10px;
+						}
+						.otherinfo p a{
+							text-decoration:none;
+							color:white;
+							}
+							.otherinfo p a:focus{
+								color:orange;
+								}
+					.otherinfo p::before {
+         content: "> ";
+         color: orange;
+font-size: 1em;
+      }
+     .copyright{
+     	background:black;
+     }
+     .copyright p{
+     	font-size:1em;
+     text-align:center;
+     color:var(--color);
+     }
+      .red{
+     	color:var(--tagbg);
+     font-weight:200;
+     }
+     
+     
+			/* FOOTER STYLING ends here */
+
+ /* end of footer styling*/
+ /*media query*/
+@media(min-width:768px) {
+  main{
+	margin-left: 18%;
+		max-width: 1000px;
+		height: auto;
+	}
+.vidcard{
+width: 300px;
+height: 300px;
+}
+.artcard{
+	width: 300px;
+	height: 200px;
+	margin: 120px auto;
+}
+    .vidcard iframe{
+width: 100%;
+height: 100%;
+}
+																
+ }
+ 
+ .scroll{
+	 position: fixed;
+	 right: 30px;
+	 bottom: 30px;
+	 font-size: 2.6em;
+ }
+ .scroll p a{
+	 text-decoration: none;
+	 color: orange;
+	 background: white;
+	 width: 25px;
+	 padding: 10px;
+	 border-radius: 50px;
+ }
+ /*TOP 10 AUDIO STYLING*/
